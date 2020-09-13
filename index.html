@@ -13,8 +13,139 @@
 
 <body>
     <div class="container">
-        <h1>Weather App</h1>
-        <a href="" class="btn btn-primary">click</a>
+        <div class="">
+            <weather-app-wrapper>
+                <div class="weather-app">
+
+                    <form id="search-form" class="mb-3">
+                        <div class="row">
+                            <div class="col-9">
+                                <input type="search" placeholder="Type a city.." class="form-control" id="city-input"
+                                    autocomplete="off">
+                            </div>
+                            <div class="col-3">
+                                <input type="submit" value="Search" class="btn btn-primary w-100">
+                            </div>
+                        </div>
+                    </form>
+                    <div class="overview">
+                        <h1 id="city">New York</h1>
+                        <ul>
+                            <li>
+                                "Last updated: "
+                                <span id="date">Sunday 16:02</span>
+                            </li>
+                            <li id="description">Scattered clouds</li>
+                        </ul>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="clearfix weather-temperature">
+                                <img src="http://openweathermap.org/img/wn/03d@2x.png" alt="scattered clouds" id="icon"
+                                    class="float-left">
+                                <div class="float-left">
+                                    <strong id="temperature">24</strong><span class="units"><a href="#"
+                                            id="celsius-link" class="active">°C</a> |
+                                        <a href="#" id="fahrenheit-link" class="">°F</a></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <ul>
+                                <li>Humidity: <span id="humidity">50</span>%</li>
+                                <li>Wind: <span id="wind">6</span> km/h</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row weather-forecast" id="forecast">
+                        <div class="col-2">
+                            <h3>
+                                17:00
+                            </h3>
+                            <img src="http://openweathermap.org/img/wn/03d@2x.png">
+                            <div class="weather-forecast-temperature">
+                                <strong>
+                                    23°
+                                </strong>
+                                23°
+                            </div>
+                        </div>
+
+                        <div class="col-2">
+                            <h3>
+                                20:00
+                            </h3>
+                            <img src="http://openweathermap.org/img/wn/02n@2x.png">
+                            <div class="weather-forecast-temperature">
+                                <strong>
+                                    21°
+                                </strong>
+                                20°
+                            </div>
+                        </div>
+
+                        <div class="col-2">
+                            <h3>
+                                23:00
+                            </h3>
+                            <img src="http://openweathermap.org/img/wn/03n@2x.png">
+                            <div class="weather-forecast-temperature">
+                                <strong>
+                                    20°
+                                </strong>
+                                19°
+                            </div>
+                        </div>
+
+                        <div class="col-2">
+                            <h3>
+                                02:00
+                            </h3>
+                            <img src="http://openweathermap.org/img/wn/03n@2x.png">
+                            <div class="weather-forecast-temperature">
+                                <strong>
+                                    19°
+                                </strong>
+                                19°
+                            </div>
+                        </div>
+
+                        <div class="col-2">
+                            <h3>
+                                05:00
+                            </h3>
+                            <img src="http://openweathermap.org/img/wn/04n@2x.png">
+                            <div class="weather-forecast-temperature">
+                                <strong>
+                                    19°
+                                </strong>
+                                19°
+                            </div>
+                        </div>
+
+                        <div class="col-2">
+                            <h3>
+                                08:00
+                            </h3>
+                            <img src="http://openweathermap.org/img/wn/04d@2x.png">
+                            <div class="weather-forecast-temperature">
+                                <strong>
+                                    20°
+                                </strong>
+                                20°
+                            </div>
+                        </div>
+                        <small>
+                            <a href="https://github.com/shuaizhao1988/vanilla-WeatherApp" target="_blank">Open-source
+                                code</a>
+                            by Shuai Zhao
+                        </small>
+                    </div>
+                </div>
+        </div>
+
+
+
     </div>
 
     <script src="src/app.js"></script>
