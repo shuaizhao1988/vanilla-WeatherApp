@@ -9,6 +9,10 @@ h1 {
   line-height: 28px;
 }
 
+h3 {
+  font-size: 20px;
+}
+
 ul {
   margin: 0;
   padding: 0;
@@ -21,6 +25,10 @@ li {
   font-weight: 100;
   line-height: 19px;
   text-align: left;
+}
+
+li::first-letter {
+  text-transform: capitalize;
 }
 
 .weather-app-wrapper {
