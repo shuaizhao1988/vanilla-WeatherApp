@@ -12,6 +12,10 @@ h1 {
 h3 {
   font-size: 20px;
 }
+img {
+  vertical-align: middle;
+  border-style: none;
+}
 
 ul {
   margin: 0;
@@ -62,6 +66,13 @@ li::first-letter {
   position: relative;
   top: -34px;
 }
+.weather-forecast img {
+  display: block;
+  margin: 0 auto;
+  height: 48px;
+  width: 48px;
+}
+
 .weather-temperature .active {
   color: rgb(33, 33, 33);
   cursor: default;
